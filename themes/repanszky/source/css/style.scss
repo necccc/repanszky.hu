@@ -1,0 +1,526 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+.clearfix {
+	*zoom: 1;
+}
+
+.clearfix:before,
+.clearfix:after {
+	display: table;
+	content: "";
+	line-height: 0;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+p {
+	margin-bottom: 24px;
+}
+
+em {
+	font-style: italic;
+}
+
+strong {
+	font-weight: bold;
+}
+
+html, body {
+	background-image: url(../images/bg.png);
+	background-position: center top;
+	background-repeat: repeat-y;
+	background-color: #bdc2c9;
+
+	font-family: "Georgia", Georgia, serif;
+	font-size: 13px;
+	line-height: 24px;
+	color: #636363;
+}
+
+header, footer, section.site-content {
+	width: 100%;
+}
+
+.site-center {
+	width: 900px;
+	margin: 0 auto;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+
+header {
+	font-weight: bold;
+	padding-top: 64px;
+	height: 176px;
+	color: #0761ad;
+	position: relative;
+}
+
+header h1 {
+	text-align: center;
+	font-size: 41px;
+	font-variant: small-caps;
+}
+
+header h1 em {
+	display: inline-block;
+	padding-top: 12px;
+	font-style: italic;
+	font-size: 24px;
+	font-variant: normal;
+	line-height: 28px;
+}
+
+header h2 {
+	text-align: center;
+	font-style: italic;
+	font-size: 15px;
+	font-weight: normal;
+	
+	padding-top: 18px;	
+}
+
+
+header h1,
+header h2 {
+	margin-left: 150px;
+	text-shadow: 1px 0px 1px rgba(4, 74, 141, .75);
+}
+
+header a {
+	color: #0761ad;
+	text-decoration: none;
+}
+
+
+header .logo {
+	width: 115px;
+	left: 50%;
+	margin-left: -280px;
+	top: 54px;
+	height: 115px;
+	position: absolute;
+	background: url(../images/logo.png) 0 0 no-repeat;
+}
+
+
+
+
+section.site-content {
+	position: relative;
+	z-index: 10;
+	
+}
+
+section.site-content div.content-mask {
+	background-image: url(../images/bg.png);
+	background-position: center top;
+	background-repeat: repeat-y;
+	background-color: #bdc2c9;
+	position: relative;
+	z-index: 10;
+}
+
+
+section.site-content div.content-mask-bg {
+	background: rgba(255,255,255,.6);
+}
+
+section.site-content:before,
+section.site-content:after {
+	content: "";
+	width: 100%;
+	display: block;
+	position: absolute;
+	z-index: 1;
+	background: rgba(255,255,255,.15);
+	box-shadow: 0 0 33px rgba(0,0,0,.1);
+}
+
+section.site-content:before {
+	height: 20px;
+	top: -20px;
+}
+
+section.site-content:after {
+	height: 40px;
+	bottom: -40px;
+}
+
+
+
+.site-content article {
+	min-height: 60px;
+	padding: 32px 40px 32px 224px;
+	position: relative;
+	font-family: Tahoma, sans-serif;
+}
+
+.post-content {
+    border-left: 1px solid #D5D5D5;
+    padding-left: 17px;
+    position: relative;
+    z-index: 10;
+    min-height: 260px;
+}
+
+.post-content a {
+	color: #2799e2;
+}
+.post-content a:hover {
+	text-decoration: underline;
+}
+
+.post-content ul,
+.post-content ol {
+	padding-left: 24px;
+}
+
+.post-content ul {
+	list-style-type: square;
+}
+
+.post-content ul a,
+.post-content ol a {
+	text-decoration: none;
+	font-weight: bold;
+}
+
+footer {
+	padding-top: 64px;
+}
+
+footer nav div {
+	width: 204px;
+	min-height: 186px;
+	float: left;
+	padding-left: 20px;
+	border-left: 1px solid #b9bfc7;
+}
+
+
+footer nav div:first-child {
+	border: none;
+	width: 170px;
+	padding-left: 54px;
+}
+
+footer nav h3 {
+	font-size: 21px;
+	line-height: 24px;
+	font-weight: bold;
+	font-variant: small-caps;
+	margin-bottom: 6px;
+}
+
+footer nav div:hover h3 {
+	color: #0761ad;
+
+}
+
+footer a {
+	font-style: italic;
+	color: #4d5151;
+	text-decoration: none;
+}
+
+footer a:hover {
+	color: #0761ad;
+	text-decoration: underline;
+}
+
+footer .copyright {
+    text-align: center;
+    padding: 30px 0;
+   	font-family: Tahoma, sans-serif;
+
+}
+
+
+.site-content article.animals-1 {
+	padding-right: 242px;
+}
+
+.animals-1 .animals {
+	width: 532px;
+	height: 273px;
+	position: absolute;
+	background: url(../images/animals-1.png) no-repeat;
+	bottom: -37px;
+	right: -136px;
+	z-index: 1;
+}
+
+
+
+h3 {
+    color: #0761ad;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 24px;
+    margin-bottom: 8px;
+}
+
+blockquote {
+    background: #eaeef0;
+    border-left: 3px solid #d5d5d5;
+    padding: 15px 13px 7px 24px;
+    color: #8c8c8c;
+    margin-bottom: 16px;
+    font-size: 11px;
+    line-height: 20px;
+}
+blockquote p {
+    margin-bottom: 8px;
+}
+blockquote strong {
+    color: #6689a6;
+    font-weight: bold;
+}
+
+
+
+.attachment-full {
+	position: absolute;
+	border: 1px solid #d6d6d6;
+	left: 42px;
+}
+
+
+
+
+
+
+
+
+
+
+.page-id-89 footer div.tippek h3,
+.page-id-36 footer div.tippek h3,
+.page-id-35 footer div.tippek h3,
+.page-id-71 footer div.tippek h3,
+.page-id-78 footer div.tippek h3,
+.page-id-80 footer div.tippek h3, 
+.page-id-2 footer div.bemutatkozas h3,
+.page-id-6 footer div.bemutatkozas h3,
+.page-id-14 footer div.bemutatkozas h3,
+.page-id-20 footer div.bemutatkozas h3 {
+	color: #0761ad;
+}
+
+
+.page-id-2 footer .page-id-2, 
+.page-id-6 footer .page-id-6, 
+.page-id-14 footer .page-id-14,
+.page-id-20 footer .page-id-20,
+.page-id-89 footer .page-id-89,
+.page-id-36 footer .page-id-36,
+.page-id-35 footer .page-id-35,
+.page-id-71 footer .page-id-71,
+.page-id-78 footer .page-id-78,
+.page-id-80 footer .page-id-80 {
+	color: #0761ad;
+	text-decoration: underline;
+}
+
+
+@media only screen and (min-width : 320px) and (max-width : 480px) {
+
+
+	html, body {
+
+		line-height: 19px;
+	
+	}
+
+	p,
+	.post-content ul, 
+	.post-content ol {
+		margin-bottom: 16px;
+	}
+
+
+
+    .site-center {
+        width: 320px;
+    }
+    
+    header {
+        padding-top: 32px;
+    
+        height: 150px;
+}
+    
+    header h1, header h2 {
+        margin-left: 0;
+    }
+    header h1 {
+        font-size: 25px;
+        line-height: 15px
+    }
+    
+    header h1 em {
+        font-size: 21px;
+    }
+    
+    header h2 {
+        font-size: 17px;
+        line-height: 21px
+    }
+    
+    
+    .site-content article {
+        padding-right: 0;    
+        padding: 20px 16px 122px 0px;
+    }
+
+    .post-content {
+        border-left: none;
+        padding-left: 17px;
+        position: relative;
+        z-index: 10;
+        min-height: 260px;
+    }
+    
+    .attachment-full {
+        display: none;
+    }
+
+    .site-content article.animals-1 {
+    	padding-right: 16px;
+    }
+    
+    .animals {
+        right: -120px !important;
+    }
+
+
+    footer nav div,
+    footer nav div:first-child {
+        width: 288px;
+        margin: 0px 16px 16px 16px;
+    
+        padding: 0 0 16px 0;
+        min-height: auto !important;
+        border-left: none;
+        border-bottom: 1px solid #b9bfc7;
+    }
+
+}
+
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width : 321px) and (max-width: 480px) {
+     .site-center {
+        width: 480px;
+    }
+     header h1, header h2 {
+        margin-left: 130px;
+    }
+    
+    header .logo {    
+        left: 26px;
+        margin-left: 0;
+        top: 26px;
+    }
+    
+    footer nav div {
+        width: 448px;
+        margin: 0px 16px 16px 16px;
+    
+        padding: 0 0 16px 0;
+        min-height: auto;
+        border-left: none;
+        border-bottom: 1px solid #b9bfc7;
+    }    
+    
+}
+
+
+@media only screen and (min-width : 768px) and (max-width : 1024px) and (orientation : portrait) {
+    
+    header .logo {    
+        margin-left: -318px;
+    }    
+   
+    .site-center {
+        width: 768px;
+    }
+    
+    .site-content article {
+        padding-right: 0;    
+        padding: 20px 16px 122px 221px;
+    }
+
+    .post-content {
+
+        padding-left: 17px;
+        position: relative;
+        z-index: 10;
+        min-height: 260px;
+    }
+    
+
+    .site-content article.animals-1 {
+    	padding-right: 16px;
+    }    
+    
+    
+    footer nav div,
+    footer nav div:first-child {
+        width: 158px;
+        padding: 16px;
+    }
+}

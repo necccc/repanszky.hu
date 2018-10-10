@@ -1,0 +1,15 @@
+<%- partial('_partial/head') %>
+<body class="home page">
+<%- partial('_partial/header', null, {cache: !config.relative_link}) %>
+
+<section class="site-content clearfix">
+  <div class="content-mask">
+    <div class="content-mask-bg">
+      <%- body %>
+    </div>
+  </div>
+</section>
+
+<%- partial('_partial/footer') %>
+</body>
+</html>

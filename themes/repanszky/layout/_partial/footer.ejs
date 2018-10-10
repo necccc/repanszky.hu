@@ -1,0 +1,62 @@
+  <footer>
+
+
+
+    <%
+      var menu = page.slug;
+      menu = (typeof menu === 'undefined') ? 'index' : menu;
+      menu = (page.slug === 'kapcsolat') ? 'index' : menu;
+    %>
+
+        <!-- li class="page_item page-item-14 <%- (menu === 'index' ? 'current_page_item' : '') %>">
+          <a href="/">Elérhetőség</a>
+        </li-->
+
+
+        <section class="site-center ">
+            <nav class="clearfix">
+                <div class="bemutatkozas">
+                    <h3>Bemutatkozás</h3>
+
+                    <ul>
+                        <li><a class="" href="/aktualitasok/">Aktualitások</a></li>
+                        <li><a class="page-id-6" href="/oneletrajz/">Önéletrajz</a></li>
+                        <li><a class="page-id-2" href="/publikaciok/">Publikációk</a></li>
+                    </ul>
+                </div>
+                <div class="tippek">
+                    <h3>Tudnivalók</h3>
+
+                    <ul>
+                        <li><a class="page-id-36" href="/mikor-forduljunk-orvoshoz/">Mikor forduljunk orvoshoz?</a></li>
+                        <li><a class="page-id-89" href="/a-haznal-torteno-betegellatasrol/">A háznál történő betegellátás</a></li>
+                        <li><a class="page-id-35" href="/apolas/">Ápolás</a></li>
+                        <li><a class="page-id-71" href="/utlevel-allatoknak/">Útlevél állatoknak</a></li>
+                        <li><a class="page-id-80" href="/az-ivartalanitasrol/">Az ivartalanításról</a></li>
+                        <li><a class="page-id-78" href="/a-chip/">A chip</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Partnerek</h3>
+
+                    <ul>
+                        <li><a href="http://www.naffykutyakozmetika.hu/">Naffy kutyakozmetika</a></li>
+                        <li><a href="http://www.allatorvosdunaharaszti.hu/">Dunaharaszti állatorvosi sebészet</a></li>
+                        <li><a href="http://www.allatpatika.hu/">Család utcai állatorvosi rendelő</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Elérhetőség</h3>
+
+                    <a href="mailto:info@repanszky.hu">info@repanszky.hu</a><br />
+                    Telefon: 06 30 852 1592
+                    <br />
+                    <br />
+                    Adószám: 55075675-1-41
+                </div>
+            </nav>
+            <div class="copyright">
+                Minden jog fenntartva. &copy; 2013
+            </div>
+        </section>
+    </footer>
