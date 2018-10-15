@@ -53,8 +53,10 @@ index_generator:
   order_by: -date
   
 # Category & Tag
-default_category: uncategorized
+default_category: publikaciok
 category_map:
+  publikaciok: publikaciok
+  aktualitasok: aktualitasok
 tag_map:
 
 # Date / Time format

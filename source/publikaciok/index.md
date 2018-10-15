@@ -1,0 +1,4 @@
+---
+title: Publikációk
+layout: publikaciok
+---

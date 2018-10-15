@@ -2,6 +2,14 @@
   <img src="http://repanszky.hu/wp-content/uploads/2012/12/fooldal2.jpg" class="attachment-full" />
 
   <div class="post-content">
+
+    <h3><%- post.title %></h3>
+
+  <% if (post.description){ %>
+    <p class="post-description"><%= post.description %></p>
+  <% } %>
+
+
     <%- post.content %>
   </div>
   <div class="animals"></div>

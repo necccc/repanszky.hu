@@ -208,6 +208,19 @@ section.site-content:after {
 	font-family: Tahoma, sans-serif;
 }
 
+.site-content article.archive-article {
+	padding: 2rem 40px 0 224px;
+	min-height: auto;
+}
+
+.site-content article.archive-article h3 {
+	margin-bottom: 0;
+}
+
+.site-content article.archive-article:last-child {
+	padding-bottom: 2rem;
+}
+
 .post-content {
     border-left: 1px solid #D5D5D5;
     padding-left: 17px;
@@ -226,6 +239,7 @@ section.site-content:after {
 .post-content ul,
 .post-content ol {
 	padding-left: 24px;
+	margin-bottom: 2rem;
 }
 
 .post-content ul {
@@ -338,7 +352,10 @@ blockquote strong {
 	left: 42px;
 }
 
-
+.post-description {
+    font-style: italic;
+    margin-bottom: 4rem;
+}
 
 
 

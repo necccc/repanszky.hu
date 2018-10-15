@@ -1,11 +1,8 @@
 ---
-title: Fooldal
+title: Üdvözlöm!
 menu: index
 layout: post
 ---
-
-
-### Üdvözlöm!
 
 Igyekeztem az állattartással kapcsolatos leghasznosabb információkat összegyűjteni és rendszerezni, bízván abban, hogy publikációim, tapasztalataim Önnek, és kedvencének is hasznára válnak.
 
